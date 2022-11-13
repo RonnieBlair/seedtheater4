@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>classes</title>
+        <meta name="viewport" content="width-device-width initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Black+Ops+One&family=Bungee&family=Bungee+Shade&family=Creepster&family=Ewert&family=Fruktur&family=Gravitas+One&family=Monoton&family=Rubik:wght@900&display=swap');
+        </style>
+
+            <!-- Font Awsome for extras -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awsome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          
+        
+        
+    <title>Accordion test</title>
+       <script type="test/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+         
+</head>
+
+    <body>
+        <div class="jumbotron text-center" height="10%"> 
+            <h1>Seedling Theater Company</h1>
+            <p>Where Young Minds come to Learn Their Potential</p>
+        </div>
+
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Seedling Theater Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="#collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>                
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsiblenavbar">
+             <ul class="navbar-nav">
+                <li class="nav-item">
+             <a class="nav-link" href="../HTML/index.html">Home</a> 
+                </li>
+                <li class="nav-item">
+             <a class="nav-link" href="../HTML/classes.html">Classes</a> 
+                </li>
+                <li class="nav-item">
+             <a class="nav-link" href="../HTML/calendar.html">Calendar</a> 
+                </li>
+                <li class="nav-item">
+             <a class="nav-link" href="#">Store</a> 
+               </li>
+             </ul>
+            </div>
+        </nav>
+        
+        <div class="container-fluid">
+           <!-- outline of seedling Calendar-->
+            <header class="text-center text-grey mb-5">
+                <h3><b>Welcome to our calendar page and feel free to look at the upcoming shows. Our classes are filling up fast, so be sure to register your children early.</b></h3>
+            </header>
+            
+            
+            <!-- Calendar -->
+            <div class="calendar shadow bg-white p-5">
+                <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                    <div class="dropdown"><h1 class="month font-weight-bold mb-0 text-upercase"><span>July 2022 Button </span></h1><div class="dropdown-content">January <br> Febuary <br> March <br> April <br> May <br> June <br> July <br> August <br> September <br> October <br> November <br> December <br></div></div> 
+                </div>
+                
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" area-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="text">Filters</span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="text-white" target="_blank">Instructors</span></a></li>
+                       <li class="active"><a href="#">Frozen Cast<span class="sr-only">current</span></a></li>
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class=:caret></span></a>
+                           
+                       </li>
+                    </ul>
+                </div>
+                
+           
+                
+                <!-- initialize accordion -->
+    <ul id="#Accordion" class="accordion">
+        <li>
+            <span><div class="link"><i class="fa fa-bullhorn"></i>Seedling Theater<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+               <li><a href="#">Frozen Cast</a></li>
+               <li><a href="#">Frozen Classes</a></li>
+               <li><a href="#">Resources</a></li>          
+            </ul>      
+        </li>
+        <li>
+            <span><div class="link"><i class="fa fa-asterisk"></i>Intro Classes<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+               <li><a href="#">Musical</a></li>
+               <li><a href="#">Theater</a></li>
+               <li><a href="#">Sprouts</a></li>          
+            </ul>      
+        </li>
+        <li>
+            <span><div class="link"><i class="fa fa-bars"></i>My Classes<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+               <li><a href="#">Designt</a></li>          
+            </ul>      
+        </li>
+        <li>
+            <span>INFO</span>
+            <ul class="submenu">
+               <li><a href="#">Dance I</a></li>
+               <li><a href="#">Dance II</a></li>       
+            </ul>      
+        </li>      
+    </ul>      
+           
+                
+                
+              <div class="calendar shadow bg-white p-5">
+                <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                    <h2 class="month font-weight-bold mb-0 text-upercase"><b>Weekly Calendar</b></h2> 
+                </div>
+                <h3 class="font-itelic text-muted mb-5">No events<br>for this day.</h3>
+                <ol class="day-names list-unstyled">
+                    <li class="font-weight-bold text-upercase">Sun</li>
+                    <li class="font-weight-bold text-upercase">Mon</li>
+                    <li class="font-weight-bold text-upercase"><b>Tue</b></li>
+                    <li class="font-weight-bold text-upercase">Wed</li>
+                    <li class="font-weight-bold text-upercase">Thu</li>
+                    <li class="font-weight-bold text-upercase">Fri</li>
+                    <li class="font-weight-bold text-upercase">Sat</li>
+                </ol>
+                
+                <ol class="days list-unstyled">
+                    <li>
+                      <div class="date">1</div>
+                      <div class="event bg-success">Recital: 8-12 yrs</div>                         
+                    </li>                
+                    <li>
+                        <div class="date">2</div> 
+                    </li>
+                    <li>
+                        <div class="date">3</div> 
+                    </li>
+                    <li>
+                        <div class="date">4</div> 
+                    </li>
+                    <li>
+                        <div class="date">5</div> 
+                    </li>
+                    <li>
+                        <div class="date">6</div> 
+                    </li>
+                    <li>
+                        <div class="date">7</div> 
+                    </li>
+                    <li>
+                        <div class="date">8</div> 
+                    </li>
+                    <li>
+                        <div class="date">9</div> 
+                    </li>
+                    <li>
+                        <div class="date">10</div> 
+                    </li>
+                    <li>
+                      <div class="date">11</div>                         
+                    </li>                
+                    <li>
+                        <div class="date">12</div> 
+                    </li>
+                    <li>
+                        <div class="date">13</div> 
+                    </li>
+                    <li>
+                        <div class="date">14</div> 
+                    </li>
+                    <li>
+                        <div class="date">15</div> 
+                    </li>
+                    <li>
+                        <div class="date">16</div> 
+                    </li>
+                    <li>
+                        <div class="date">17</div> 
+                    </li>
+                    <li>
+                        <div class="date">18</div> 
+                    </li>
+                    <li>
+                        <div class="date">19</div> 
+                    </li>
+                    <li>
+                        <div class="date">20</div> 
+                    </li>
+                    <li>
+                      <div class="date">21</div>                        
+                    </li>                
+                    <li>
+                        <div class="date">22</div> 
+                    </li>
+                    <li>
+                        <div class="date">23</div> 
+                    </li>
+                    <li>
+                        <div class="date">24</div> 
+                    </li>
+                    <li>
+                        <div class="date">25</div> 
+                    </li>
+                    <li>
+                        <div class="date">26</div> 
+                    </li>
+                    <li>
+                        <div class="date">27</div> 
+                    </li>
+                    <li>
+                        <div class="date">28</div> 
+                    </li>
+                    <li>
+                        <div class="date">29</div> 
+                    </li>
+                    <li>
+                        <div class="date">30</div> 
+                    </li>
+                    <li></li>
+                </ol>
+                  </div>
+        
+                
+            </div>
+        </nav>
+            </div>
+        </div>
+        
+        
+        <div class="text-center">
+            <button class="btn1 btn-default btn circle btn-lg">Acting<i class="glyphicon glyphicon-plus" area-hidden="true"></i></button>
+            <button class="btn2 btn-default btn circle btn-lg">Sprouts<i class="glyphicon glyphicon-music" area-hidden="true"></i></button>
+            <button class="btn3 btn-default btn circle btn-lg">Musical<i class="glyphicon glyphicon-chevron-up" area-hidden="true"></i></button>
+            <button class="btn4 btn-default btn circle btn-lg">Design<i class="glyphicon glyphicon-chevron-down" area-hidden="true"></i></button>
+            <button class="btn5 btn-default btn circle btn-lg">Dance<i class="glyphicon glyphicon-volume-off" area-hidden="true"></i></button>
+
+         </div>
+        <div class="col-sm-12">
+            
+        </div>
+        <div class="footer fixed bottom">
+                <p1>Copyright 2022 Seedling Theater Company</p1>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> 
+    </body>
+</html>
